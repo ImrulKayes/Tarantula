@@ -1,0 +1,92 @@
+somber           dark; gloomy; melancholy; depressing
+somnambulist     sleepwalker
+somnolent        half asleep; drowsy
+sonorous         resonant; producing a full deep sound; producing sound
+sophist          teacher of philosophy; quibbler; employer of fallacious reasoning
+sophisticated    worldly wise and urbane; refined; complex
+sophistry        seemingly plausible but fallacious reasoning; sophism
+sophomoric       immature; half-baked; like a sophomore
+soporific        sleep-causing; marked by sleepiness; drowsy
+sordid           filthy; foul; base; vile
+spangle          small shiny metallic piece sewn to clothing for ornamentation
+sparse           not thick; thinly scattered; scanty
+Spartan          without attention to comfort; lacking luxury and comfort; sternly disciplined
+spasmodic        fitful; periodic; of or like a spasm
+spat             squabble; minor dispute; minor quarrel
+spate            sudden flood or rush
+spatial          relating to space
+spatula          broad-bladed instrument used for spreading or mixing
+spawn            lay eggs (in large numbers); produce offspring (in large numbers)
+specious         seemingly reasonable but incorrect; misleading (often intentionally)
+spectral         ghostly
+spectrum         colored band produced when a beam of light passes through a prism
+spendthrift      someone who wastes money
+sphinx-like      enigmatic; mysterious
+splice           join together end to end to make one continuous length; fasten together; unite
+spontaneity      lack of premeditation; naturalness; freedom from constraint
+spoonerism       accidental transposition of sounds in successive words
+sporadic         occurring irregularly; intermittent
+sportive         playful; frolicsome; merry
+spruce           neat and trim in appearance; smart
+spry             (esp. of older people) vigorously active; nimble
+spurious         false; counterfeit; forged; illogical
+spurn            reject disdainfully; scorn
+squabble         minor quarrel; bickering; V: engage in a minor quarrel
+squalor          condition of being squalid; filth; degradation; dirty neglected state
+squander         waste; spend foolishly
+squat            short and thick; stocky
+staccato         played in an abrupt manner; marked by abrupt sharp sound
+stagnant         (of water) not flowing (often bad-smelling); motionless; stale; not developing; inactive; dull
+staid            serious and sedate; sober
+stalemate        deadlock; situation in which further action is blocked
+stalwart         physically strong; brawny; steadfast; strong in mind or determination
+stamina          power of endurance; strength; staying power
+stammer          speak with involuntarily pauses or repetitions
+stanch           stop or check flow of blood
+stanza           division of a poem (composed of two or more lines)
+static           having no motion; unchanging; lacking development
+statute          law enacted by the legislature
+statutory        created by statute or legislative action; regulated by statute
+steadfast        steadily loyal; unswerving; steady
+stealth          action of moving secretly or unseen; slyness; sneakiness; secretiveness
+steep            soak; saturate
+stellar          pertaining to the stars; of a star performer; outstanding
+stem             stop or check (the flow of)
+stem_from        arise from; originate from
+stentorian       (of the voice) extremely loud
+stereotype       one regarded as embodying a set image or type
+stickler         perfectionist; person who insists things be exactly right
+stifle           suppress; extinguish; inhibit; smother or suffocate
+stigma           token of disgrace; brand
+stilted          bombastic; stiffly pompous
+stink            stench
+stint            supply; allotted amount of work; assigned portion of work
+stipend          pay for services
+stipple          paint or draw with dots or short strokes
+stipulate        state as a necessary condition (of an agreement); make express conditions
+stock            standard; kept regularly in stock or supply; typical; routine; common
+stockade         wooden enclosure or pen; fixed line of posts used as defensive barrier
+stodgy           dull; stuffy; boringly conservative
+stoic            stoical; impassive; unmoved by joy or grief
+stoke            stir up a fire or furnace; feed plentifully
+stolid           dull; impassive; showing little emotion when strong feelings are expected
+stratagem        deceptive scheme; clever trick
+stratified       divided into classes; arranged into strata
+stratum          layer of earth's surface; layer of society
+strew            spread randomly; sprinkle; scatter
+striated         marked with parallel bands; striped; grooved
+stringent        (of rules) binding; rigid; marked by scarcity of money
+strut            supporting bar
+studied          carefully contrived; calculated; unspontaneous; deliberate; thoughtful
+stultify         make stupid in mind; suppress; frustrate or hinder
+stupefy          stun; make numb (as with a drug); amaze
+stupor           daze; lack of awareness
+stygian          unpleasantly dark; gloomy; hellish; deathly
+stymie           thwart; present an obstacle; stump
+suavity          urbanity; polish
+subaltern        subordinate
+subdue           less intense; quieter
+subjective       influenced by personal feelings; unreal
+subjugate        conquer; bring under control
+sublimate        refine; purify; replace (natural urges) with socially acceptable activities
+sublime          causing deep feelings of wonder, joy, respect, etc.
