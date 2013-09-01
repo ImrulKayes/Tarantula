@@ -37,7 +37,6 @@ namespace WindowsApplication1
         {
             if (sender == timer1)
             {
-                //MessageBox.Show("aaaaaaaaaa");
                 Random rnd = new Random();
                 int randomNumber = rnd.Next(0,721);
                 randomNumber = randomNumber % 6;
@@ -56,7 +55,6 @@ namespace WindowsApplication1
         {
             if (sender == timer2)
             {
-                //MessageBox.Show("aaaaaaaaaa");
                 Random rnd = new Random();
                 int randomNumber = rnd.Next(1, 200);
                 randomNumber = randomNumber % 5;
@@ -129,7 +127,6 @@ namespace WindowsApplication1
                     {
                         button1.Click += new System.EventHandler(fnt.label10_Click);
                     }
-                    ////
                     if (number ==11)
                     {
                         button1.Click += new System.EventHandler(fnt.label20_Click);
@@ -211,10 +208,7 @@ namespace WindowsApplication1
                         button1.Click += new System.EventHandler(fnt.label21_Click);
                     }
 
-
-                    ///..
-                    ///
-                    if (number ==31)
+                   if (number ==31)
                     {
                         button1.Click += new System.EventHandler(fnt.label40_Click);
                     }
@@ -255,7 +249,7 @@ namespace WindowsApplication1
                     {
                         button1.Click += new System.EventHandler(fnt.label31_Click);
                     }
-                    /////////////
+
                     if (number ==41)
                     {
                         button1.Click += new System.EventHandler(fnt.label50_Click);
@@ -302,22 +296,5 @@ namespace WindowsApplication1
 
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-    
-
-      /*  private void button1_Click(object sender, EventArgs e)
-        {
-            button1.Text = firstDigit.ToString() + secondDigit.ToString();
-            FrontScreen fnt = new FrontScreen();
-           // this.Dispose();
-            //frmChild.btnClickMeToo.Click += new 
-            button1.Click+=new System.EventHandler(fnt.label30_Click);
-           // this.button1.Click += new System.EventHandler(this.button1_Click);
-        }*/
     }
 }

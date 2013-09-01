@@ -16,3 +16,15 @@ F:\WindowsApplication1\WindowsApplication1\obj\Release\Tarantula.exe
 F:\WindowsApplication1\WindowsApplication1\obj\Release\Tarantula.pdb
 F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\Tarantula.exe
 F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\Tarantula.pdb
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\ResolveAssemblyReference.cache
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\WindowsApplication1.Flip_Words.resources
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\WindowsApplication1.FrontScreen.resources
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\WindowsApplication1.Help.resources
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\WindowsApplication1.HotWords.resources
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\WindowsApplication1.NewWordlist.resources
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\WindowsApplication1.Properties.Resources.resources
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\WindowsApplication1.RandomListChoser.resources
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\GenerateResource-ResGen.read.1.tlog
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\obj\Release\GenerateResource-ResGen.write.1.tlog
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\bin\Release\Tarantula.exe
+F:\Tarantula_code_publish\WindowsApplication1\WindowsApplication1\bin\Release\Tarantula.pdb

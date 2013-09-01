@@ -29,7 +29,6 @@ namespace WindowsApplication1
         public int mulchoiceAns_Index;
         public int RevchallangeAns_Index;
         public int i = 0;
-       // public int revmulChoiceCounter = 0;
         public int revtimerCounter = 0;
         public int mullchoicetimerCounter = 0;
         public int[] questionsAnswer_status = new int[10000];
@@ -42,11 +41,6 @@ namespace WindowsApplication1
         }
 
         //reverse Challenge Starts
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-        
-        }
-
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
             for (int k = 0; k <global_count; k++) questionsAnswer_status[k] = 0;
@@ -93,16 +87,9 @@ namespace WindowsApplication1
             reversechoiceoption3.Checked = false;
             reversechoiceoption4.Checked = false;
             reversechoiceoption5.Checked = false;
-
             
             labelReveseChallangeStatus.Text = "Count: "+(revmulChoiceCounter + 1) + "/" + global_count;
-            //MessageBox.Show("ffffffffff"+i.ToString());
-           // if (i == 0) { newRevMultipleChoiceQuestion(); i = 1; }
-
-
-
-
-                      
+       
         }
 
         private void MultipleChoice_CheckedChanged(object sender, EventArgs e)
@@ -170,7 +157,6 @@ namespace WindowsApplication1
                 random_number = random_number % global_count;
                 if (meaning_status[random_number] == 0)
                 {
-                   // MessageBox.Show("aaaa");
                     meaning_status[random_number] = 1;
                     return random_number;
                 }
@@ -181,12 +167,8 @@ namespace WindowsApplication1
         {
             if (sender == timer1)
             {
-                //MessageBox.Show("aaaaaaaaaa");
-                //labelReveseChallangeStatus.Text = labelReveseChallangeStatus.Text +(revtimerCounter++);
                 int mm = (int)revtimerCounter;
-                //MessageBox.Show(revtimerCounter.ToString()); 
                 labelrevtimercounter.Text = mm.ToString();
-                
                 ++revtimerCounter;
 
             }
@@ -195,11 +177,7 @@ namespace WindowsApplication1
         {
             if (sender == timer2)
             {
-                //MessageBox.Show("aaaaaaaaaa");
-                //labelReveseChallangeStatus.Text = labelReveseChallangeStatus.Text +(revtimerCounter++);
                 int mm = (int)mullchoicetimerCounter;
-                //MessageBox.Show(revtimerCounter.ToString()); 
-                //labelmulchoicetimercounterstatus.Text = mm.ToString();
                 TEXTFORREVCOUNTER.Text = mm.ToString();
                 ++mullchoicetimerCounter;
 
@@ -296,7 +274,6 @@ namespace WindowsApplication1
             reversechoiceoption5.Checked = false;
 
             buttonGo.Visible = false;
-            //  for (int k = 0; k <= 100; k++) { meaning_status[k] = 0; }
             reversechoiceoption1.Text = ""; reversechoiceoption2.Text = ""; reversechoiceoption3.Text = ""; reversechoiceoption4.Text = ""; reversechoiceoption5.Text = "";
             int[] nonrepeater = { 0, 0, 0, 0, 0, 0 };
             groupBoxReverseChallenge.Visible = true;
@@ -375,7 +352,6 @@ namespace WindowsApplication1
                 }
                 if (terminator == 4) break;
             }
-          // MessageBox.Show( questionsAnswer_status[rightAnsCounter].ToString());
             ++rightAnsCounter;
             ++revmulChoiceCounter;
         }
@@ -417,7 +393,6 @@ namespace WindowsApplication1
                 labelrevtimercounter.Text = "0";
                 ++rightAnsCounter;
                 newMultipleChoiceQuestion();
-               // MessageBox.Show("aaaaaa");
             }
 
         }
@@ -441,30 +416,8 @@ namespace WindowsApplication1
                 if (questionsAnswer_status[j] == 1) { ++i; } str = str + "\t" + questionsAnswer_status[j].ToString();
             }
                 label3ReversechoiceResult.Text = "Your Score is: " +i.ToString();
-            //label3ReversechoiceResult.Text = ">End<";
-               // MessageBox.Show(str);
         }
 
-
-        /*if (reversechoiceoption1.Text == word[RevchallangeAns_Index]) { label3ReversechoiceResult.ForeColor = System.Drawing.Color.Green; label3ReversechoiceResult.Text = "Correct";
-
-                    if (questionsAnswer_status[rightAnsCounter] == 0)
-                        {
-                            questionsAnswer_status[rightAnsCounter] = 1;
-                            // MessageBox.Show("aaaaaaaaaaaaaaa");
-                            rightAns = true;
-                          //  MessageBox.Show("1Y"+rightAnsCounter.ToString()+"   "+rightAnsCounter.ToString());
-                        }
-                        else if (questionsAnswer_status[rightAnsCounter] == 1) { }
-                        else
-                        {
-                            questionsAnswer_status[rightAnsCounter] = 5;
-                            MessageBox.Show("1");
-                        }
-                }
-                else
-                { label3ReversechoiceResult.ForeColor = System.Drawing.Color.Red; label3ReversechoiceResult.Text = "Wrong.\nAns: " + word[revmulChoiceCounter - 1]; rightAns = false; questionsAnswer_status[rightAnsCounter] = 5; }*/
-        
         
         private void mulChoice1_CheckedChanged(object sender, EventArgs e)
         {
@@ -481,7 +434,6 @@ namespace WindowsApplication1
                     else
                     {
                         questionsAnswer_status[rightAnsCounter] = 5;
-                    //MessageBox.Show("1");
                     }
                 }
                 else
@@ -506,7 +458,6 @@ namespace WindowsApplication1
                     else
                     {
                         questionsAnswer_status[rightAnsCounter] = 5;
-                    //MessageBox.Show("1");
                     }
                 }
                 else
@@ -522,20 +473,20 @@ namespace WindowsApplication1
             try
             {
                 if (mulChoice3.Text == meaning[mulchoiceAns_Index]) { label1.ForeColor = System.Drawing.Color.Green; label1.Text = "Correct"; rightAns = true;
-                if (questionsAnswer_status[rightAnsCounter] == 0)
-                {
-                    questionsAnswer_status[rightAnsCounter] = 1;
+                    if (questionsAnswer_status[rightAnsCounter] == 0)
+                     {
+                         questionsAnswer_status[rightAnsCounter] = 1;
 
-                }
-                else if (questionsAnswer_status[rightAnsCounter] == 1) { }
-                else
-                {
-                    questionsAnswer_status[rightAnsCounter] = 5;
-                    //MessageBox.Show("1");
-                }
+                      }
+                     else if (questionsAnswer_status[rightAnsCounter] == 1) { }
+                     else
+                     {
+                        questionsAnswer_status[rightAnsCounter] = 5;
+                     }
             }
                 else
-            { label1.ForeColor = System.Drawing.Color.Red; label1.Text = "Wrong."; rightAns = false; questionsAnswer_status[rightAnsCounter] = 5; }
+            { 
+                    label1.ForeColor = System.Drawing.Color.Red; label1.Text = "Wrong."; rightAns = false; questionsAnswer_status[rightAnsCounter] = 5; }
             }
             catch (Exception ex){
                 MessageBox.Show("Exception occured:" + ex.ToString());
@@ -557,7 +508,6 @@ namespace WindowsApplication1
                 else
                 {
                     questionsAnswer_status[rightAnsCounter] = 5;
-                    //MessageBox.Show("1");
                 }
             }
                 else
@@ -580,24 +530,13 @@ namespace WindowsApplication1
             else
             {
                 questionsAnswer_status[rightAnsCounter] = 5;
-                //MessageBox.Show("1");
             }
         }
             else
             { label1.ForeColor = System.Drawing.Color.Red; label1.Text = "Wrong."; rightAns = false; questionsAnswer_status[rightAnsCounter] = 5; }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void headerLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LearnWordList_CheckedChanged(object sender, EventArgs e)
+           private void LearnWordList_CheckedChanged(object sender, EventArgs e)
         {
             SelectTest.Visible = true;
             groupBoxMultipleChoice.Visible = false;
@@ -661,12 +600,9 @@ namespace WindowsApplication1
             timer1.Interval = 1000;
             timer1.Tick += new EventHandler(timer1_Tick);
 
-            //MessageBox.Show(cml.wordlistnumber+cml.wordlistidentity);
             headerLabel.Text = "Test on Word List " + wordlistnumber.ToString() + ":(" + wordlistIdentity + ")";
-            //StreamReader objReader = new StreamReader("I:\\Program Files\\Default Company Name\\Tarantula\\Resources\\" + wordlistnumber.ToString()+ ".txt");
-
+       
             string dir = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            //MessageBox.Show(dir);
             StreamReader objReader = new StreamReader(dir+ @"\wordList\" + wordlistnumber.ToString()+ ".txt");
 
             string str = "asdas";
@@ -675,28 +611,21 @@ namespace WindowsApplication1
             {
                 str = objReader.ReadLine();
                 if (str == null) break;
-                // 
                 k = str.IndexOf(" ");
                 word[i] = str.Substring(0, k);
                 String temp = str.Substring(k, str.Length - k);
-                //MessageBox.Show(temp.ToString() );
-                //char [] ch= {' ','\t','\n'};
-                //temp.TrimStart(ch);
                 char[] ch = temp.ToCharArray();
                 int j = 0;
                 while (ch[j] == ' ')
                 {
                     ++j;
                 }
-                // MessageBox.Show(j.ToString());
                 meaning[i++] = temp.Substring(j);
             }
             str = "";
             for (int j = 0; j < i; j++)
                 str = str + meaning[j] + "\n";
 
-            //MessageBox.Show(str.ToString());
-            //richTextBox1.Text = str;
             global_count = i;
             count = i;
             objReader.Close();
@@ -705,19 +634,13 @@ namespace WindowsApplication1
              SelectTest.Visible = true;
 
 
-           // LearnWordList.Checked = true;
-            //MultipleChoice.Checked = false;
             LearnWordList.Checked = false;
             Radiobuttopnmulchoice.Checked = false;
-           // reverseChallenge.Checked = false;
             radioButton4.Checked = false;
 
             groupBoxLearnWordList.Visible = false;
             groupBoxMultipleChoice.Visible = false;
             groupBoxReverseChallenge.Visible = false;
-           // panel1.Visible = false;
-         // MessageBox.Show("LoadingForm");
-        
         }
 
         private void Radiobuttopnmulchoice_CheckedChanged(object sender, EventArgs e)
@@ -754,8 +677,7 @@ namespace WindowsApplication1
 
         private void buttonReverseChallanageNext_Click(object sender, EventArgs e)
         {
-            
-           //MessageBox.Show(questionsAnswer_status[rightAnsCounter].ToString());
+
             
             mullchoicetimerCounter = 0;
             buttonGo.Visible = false;
@@ -778,7 +700,6 @@ namespace WindowsApplication1
              }
             else
             {
-               // 
                 reversechoiceoption1.Checked = false;
                 reversechoiceoption2.Checked = false;
                 reversechoiceoption3.Checked = false;
@@ -803,9 +724,7 @@ namespace WindowsApplication1
                     if (questionsAnswer_status[rightAnsCounter] == 0)
                         {
                             questionsAnswer_status[rightAnsCounter] = 1;
-                            // MessageBox.Show("aaaaaaaaaaaaaaa");
                             rightAns = true;
-                          //  MessageBox.Show("1Y"+rightAnsCounter.ToString()+"   "+rightAnsCounter.ToString());
                         }
                         else if (questionsAnswer_status[rightAnsCounter] == 1) { }
                         else
@@ -816,7 +735,6 @@ namespace WindowsApplication1
                 }
                 else
                 { label3ReversechoiceResult.ForeColor = System.Drawing.Color.Red; label3ReversechoiceResult.Text = "Wrong."; rightAns = false; questionsAnswer_status[rightAnsCounter] = 5; }
-               // MessageBox.Show(revmulChoiceCounter.ToString());
             }
             catch (Exception ex) {
                 MessageBox.Show("Exception:"+ex.ToString());
@@ -828,7 +746,6 @@ namespace WindowsApplication1
             labelReverseChoice.Visible = true;
             try
             {
-               // MessageBox.Show("aaaaaaaaaaaaaaa");
                 if (reversechoiceoption2.Text == word[RevchallangeAns_Index])
                 {
                     label3ReversechoiceResult.ForeColor = System.Drawing.Color.Green; label3ReversechoiceResult.Text = "Correct";
@@ -837,13 +754,11 @@ namespace WindowsApplication1
                     {
                         questionsAnswer_status[rightAnsCounter] = 1;
                         rightAns = true;
-                       // MessageBox.Show("2Y" + rightAnsCounter.ToString());
                     }
                     else if (questionsAnswer_status[rightAnsCounter] == 1) { }
                     else
                     {
                         questionsAnswer_status[rightAnsCounter] = 5;
-                      //  MessageBox.Show("2");
                     }
                 }
                 else
@@ -872,7 +787,6 @@ namespace WindowsApplication1
                     else
                     {
                         questionsAnswer_status[rightAnsCounter] = 5;
-                      //  MessageBox.Show("3");
                     }
                 }
                 else
@@ -939,16 +853,7 @@ namespace WindowsApplication1
             }
         }
 
-        private void groupBoxMultipleChoice_Enter_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3ReversechoiceResult_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
              
@@ -961,9 +866,7 @@ namespace WindowsApplication1
             this.Dispose();
             hwrd.ShowDialog();
             
-            hwrd.Focus();
-          //  this.dis
-        
+            hwrd.Focus();       
         }
 
         private void flipwords_CheckedChanged(object sender, EventArgs e)
@@ -995,12 +898,6 @@ namespace WindowsApplication1
         {
             FrontScreen fs = new FrontScreen();
             this.Dispose();
-            //fs.ShowDialog();
-        }
-
-        private void groupBoxReverseChallenge_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -1014,8 +911,6 @@ namespace WindowsApplication1
             abt.ShowDialog();
             
         }
-
-
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -1046,18 +941,7 @@ namespace WindowsApplication1
             pictureBox2.BackgroundImage = global::WindowsApplication1.Properties.Resources.icon_gatis_froneScreen;
         }
 
-        private void pictureBox3_MouseHover(object sender, EventArgs e)
-        {
-           // pictureBox3.Image = null;
-           // pictureBox3.BackgroundImage = global::WindowsApplication1.Properties.Resources.icon_gatis_Text_About;
-        }
-
-        private void pictureBox3_MouseLeave(object sender, EventArgs e)
-        {
-            //pictureBox3.Image = global::WindowsApplication1.Properties.Resources.user_icon;
-           // pictureBox3.BackgroundImage = global::WindowsApplication1.Properties.Resources.icon_gatis_froneScreen;
-        }
-
+      
         private void button4_Click(object sender, EventArgs e)
         {
             timer2.Start();
@@ -1078,25 +962,5 @@ namespace WindowsApplication1
             label3ReversechoiceResult.Visible = true;
             newRevMultipleChoiceQuestion();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-        //    global_count = Int32.Parse(textBox1.Text);
-         //   headerLabel.Text = word[Int32.Parse(textBox1.Text)];
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-
-
     }
 }

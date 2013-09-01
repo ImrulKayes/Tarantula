@@ -53,7 +53,6 @@ namespace WindowsApplication1
             this.button1.Text = " Go Word List : 50";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox2
             // 

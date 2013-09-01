@@ -189,8 +189,7 @@ namespace WindowsApplication1
             this.headerLabel.Size = new System.Drawing.Size(67, 23);
             this.headerLabel.TabIndex = 1;
             this.headerLabel.Text = "label1";
-            this.headerLabel.Click += new System.EventHandler(this.headerLabel_Click);
-            // 
+          
             // groupBoxLearnWordList
             // 
             this.groupBoxLearnWordList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -307,8 +306,7 @@ namespace WindowsApplication1
             this.groupBoxReverseChallenge.TabIndex = 13;
             this.groupBoxReverseChallenge.TabStop = false;
             this.groupBoxReverseChallenge.Text = "Reverse Challenge";
-            this.groupBoxReverseChallenge.Enter += new System.EventHandler(this.groupBoxReverseChallenge_Enter);
-            // 
+         
             // TEXTFORREVCOUNTER
             // 
             this.TEXTFORREVCOUNTER.AutoSize = true;
@@ -380,8 +378,7 @@ namespace WindowsApplication1
             this.label3ReversechoiceResult.TabIndex = 11;
             this.label3ReversechoiceResult.Text = "None";
             this.label3ReversechoiceResult.Visible = false;
-            this.label3ReversechoiceResult.Click += new System.EventHandler(this.label3ReversechoiceResult_Click);
-            // 
+                    // 
             // labelRevereChallengeWord
             // 
             this.labelRevereChallengeWord.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -618,8 +615,7 @@ namespace WindowsApplication1
             this.label1.Size = new System.Drawing.Size(48, 21);
             this.label1.TabIndex = 11;
             this.label1.Text = "None";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
+             // 
             // groupBoxMultipleChoice
             // 
             this.groupBoxMultipleChoice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -645,7 +641,7 @@ namespace WindowsApplication1
             this.groupBoxMultipleChoice.TabIndex = 2;
             this.groupBoxMultipleChoice.TabStop = false;
             this.groupBoxMultipleChoice.Text = "Multiple Choice";
-            this.groupBoxMultipleChoice.Enter += new System.EventHandler(this.groupBoxMultipleChoice_Enter_1);
+ 
             // 
             // labelrevtimercounter
             // 
